@@ -1,0 +1,25 @@
+<channel
+   name="Redirect Response"
+   guid="579EA2802A75B414724EF13DA7F14D11"
+   description="This example shows how to make a webservice which can redirect a browser to a new URL.&#xD;&#xA;&#xD;&#xA;This is a helpful web desktop integration pattern. You could use it to redirect a link from say an patient record system to a lab system.&#xD;&#xA;&#xD;&#xA;This simple example just redirects to our website but you can start with this as an example."
+   start_automatically="true"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_http
+      type="mapper"
+      guid="Redirect_Response-FromHTTP-LTywxy1rku0qJZ"
+      commit_id="fb5ca0e857a05011e064b68db94cf16c98fcc8ed"
+      commit_comment="More comments."
+      mapper_url_path="redirect/"/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>
