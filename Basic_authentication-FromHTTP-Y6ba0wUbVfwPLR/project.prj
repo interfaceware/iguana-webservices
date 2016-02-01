@@ -1,0 +1,13 @@
+{
+    "LocalDependencies": [],
+    "LuaDependencies": [
+        "web.basicauth"
+    ],
+    "OtherDependencies": [],
+    "timestamp": "1454355267",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}

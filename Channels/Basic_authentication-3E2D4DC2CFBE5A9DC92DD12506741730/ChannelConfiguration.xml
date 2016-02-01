@@ -1,0 +1,25 @@
+<channel
+   name="Basic authentication"
+   guid="3E2D4DC2CFBE5A9DC92DD12506741730"
+   description="This channel shows how to make a webservice using basic HTTP digest authentication.&#xD;&#xA;&#xD;&#xA;That means it will drop down a dialog for you to enter your Iguana name and password before it shows you the web page results."
+   start_automatically="true"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_http
+      type="mapper"
+      guid="Basic_authentication-FromHTTP-Y6ba0wUbVfwPLR"
+      commit_id="6b424e7ab5362a5af8a3a16d7222dccb71d431d6"
+      commit_comment="Put in more tracing and extracted credentials."
+      mapper_url_path="basicauth/"/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>
