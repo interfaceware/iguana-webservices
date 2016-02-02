@@ -1,0 +1,14 @@
+{
+    "LocalDependencies": [],
+    "LuaDependencies": [
+        "net.http.getCached",
+        "store2"
+    ],
+    "OtherDependencies": [],
+    "timestamp": "1454446868",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}
