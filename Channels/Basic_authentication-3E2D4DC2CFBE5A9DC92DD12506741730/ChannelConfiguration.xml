@@ -10,8 +10,8 @@
    <from_http
       type="mapper"
       guid="Basic_authentication-FromHTTP-Y6ba0wUbVfwPLR"
-      commit_id="6b424e7ab5362a5af8a3a16d7222dccb71d431d6"
-      commit_comment="Put in more tracing and extracted credentials."
+      commit_id="d81abe9bda10b4910c3127802175b1fd68bea0dc"
+      commit_comment="Soft coded the basic authentication authorization."
       mapper_url_path="basicauth/"/>
    <message_filter
       filter_after_logging="false"

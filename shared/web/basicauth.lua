@@ -47,10 +47,11 @@ function basicauth.isAuthorized(Request)
    return Code == 200
 end
 
-function basicauth.requireAuthorization()
+function basicauth.requireAuthorization(ErrorMessage)
+   ErrorMessage = ErrorMessage or "Enter your Iguana username and password"
    net.http.respond{
       code=401,
-      headers={["WWW-Authenticate"]='Basic realm=Iguana Web Service'}, 
+      headers={["WWW-Authenticate"]='Basic realm='..ErrorMessage}, 
       body="Please Authenticate"}
 end
 

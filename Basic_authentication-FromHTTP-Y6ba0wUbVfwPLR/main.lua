@@ -9,7 +9,8 @@ function main(Data)
    local R = net.http.parseRequest{data=Data}
    -- Check for authentication against the users defined in Iguana.
    if not basicauth.isAuthorized(R) then
-      basicauth.requireAuthorization()
+      -- We display this in the prompt to the user (somewhat browser dependent)
+      basicauth.requireAuthorization("Please enter your Iguana username and password.")
       iguana.logInfo("Failed authentication.")
       return
    end
