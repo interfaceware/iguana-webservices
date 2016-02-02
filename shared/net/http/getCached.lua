@@ -66,7 +66,7 @@ HelpDataGetCached=[[{
                "Desc": "Specifies the output format of the response headers: 'default' - a table of key/value pairs from the last response after redirects, where the value is the last value for the given header key; 'raw' - a table containing every line of every header, including redirects; or 'multiple' - a table of key/value pairs of the form {HeaderKey = {Values={Val1,LastVal},Value=LastVal}} where the values are from the last response after redirects <u>table</u>.",
                "Opt": true}},
          {"cache_time": {
-               "Desc": "The time to cache the results for in seconds (default=60).<u>integer</u>.",
+               "Desc": "The time in seconds to cache the results (default=3600 i.e. 1 hour).<u>integer</u>.",
                "Opt": true}},
 
          {"method": {

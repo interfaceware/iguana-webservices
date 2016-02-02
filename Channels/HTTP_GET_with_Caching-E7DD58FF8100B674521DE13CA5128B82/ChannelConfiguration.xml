@@ -9,8 +9,17 @@
    </to_channel>
    <from_mapper
       guid="HTTP_GET_with_Caching-From-mS2rsyPwyYx2Vc"
-      commit_id="2c54981b65b1d24ad4fcd576e90a877ee18ae83e"
-      commit_comment="Put result tracing in there."
+      commit_id="4ac5dd65439bdd0d662b7069f442227c4c94632c"
+      commit_comment="Changed the help to be more accurate."
       poll_time="10000">
    </from_mapper>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
 </channel>
