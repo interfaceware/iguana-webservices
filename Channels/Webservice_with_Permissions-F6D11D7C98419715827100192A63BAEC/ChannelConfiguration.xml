@@ -12,7 +12,7 @@
       guid="Webservice_with_Permissions-FromHTTP-UkEffwJZbrMRyf"
       commit_id="e64fcc3d83900a96468f8f4f22bbcd979398d551"
       commit_comment="Removed some blank lines."
-      mapper_url_path="basicauth/"/>
+      mapper_url_path="permission/"/>
    <message_filter
       filter_after_logging="false"
       log_pre_post_filter_message="true"
