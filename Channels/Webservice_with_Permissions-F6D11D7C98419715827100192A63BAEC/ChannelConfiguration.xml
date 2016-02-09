@@ -1,0 +1,25 @@
+<channel
+   name="Webservice with Permissions"
+   guid="F6D11D7C98419715827100192A63BAEC"
+   description="More advanced example showing how we can build a permission based web service by leveraging Iguana&apos;s built in user permission model.&#xD;&#xA;&#xD;&#xA;The webservice uses basic authentication and checks what groups the user belongs to in order to determine what web services are available."
+   start_automatically="true"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_http
+      type="mapper"
+      guid="Webservice_with_Permissions-FromHTTP-UkEffwJZbrMRyf"
+      commit_id="e64fcc3d83900a96468f8f4f22bbcd979398d551"
+      commit_comment="Removed some blank lines."
+      mapper_url_path="basicauth/"/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>

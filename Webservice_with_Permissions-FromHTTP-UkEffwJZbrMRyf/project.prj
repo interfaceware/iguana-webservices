@@ -1,0 +1,15 @@
+{
+    "LocalDependencies": [],
+    "LuaDependencies": [
+        "iguana.action",
+        "iguana.user",
+        "web.basicauth"
+    ],
+    "OtherDependencies": [],
+    "timestamp": "1455035623",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}
