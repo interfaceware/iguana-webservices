@@ -1,0 +1,16 @@
+{
+    "LocalDependencies": [
+        "WebServicePatientData.sqlite",
+        "database.lua",
+        "patient.lua",
+        "webpage.lua"
+    ],
+    "LuaDependencies": [],
+    "OtherDependencies": [],
+    "timestamp": "1455916173",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}

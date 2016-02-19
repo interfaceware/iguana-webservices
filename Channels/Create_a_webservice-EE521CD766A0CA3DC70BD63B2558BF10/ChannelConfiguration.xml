@@ -1,0 +1,25 @@
+<channel
+   name="Create a webservice"
+   guid="EE521CD766A0CA3DC70BD63B2558BF10"
+   description="It is very convenient creating web services with Iguana.&#xD;&#xA;&#xD;&#xA;This is an example web service that allows information from a database to be queried via HTTP GET.  &#xD;&#xA;&#xD;&#xA;The Source component listens for GET requests, searches the database for the requested information and responds as either XML or JSON.&#xD;&#xA;&#xD;&#xA;The filter and destination components are not used.&#xD;&#xA;"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_http
+      type="mapper"
+      guid="Iguana_Web_Service-FromHTTP-kGn16fDVIRgW4C"
+      commit_id="1c12529c7f91390a368f5cad2169539be2ac32f6"
+      commit_comment="dsd"
+      mapper_url_path="example/webservice"/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>
