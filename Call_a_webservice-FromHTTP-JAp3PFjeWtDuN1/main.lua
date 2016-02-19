@@ -1,5 +1,6 @@
--- This is a trivial example of calling a web service and serving up
--- the data.
+-- This is a trivial example of calling a web service and serving up the data.
+-- In this case we go and get the weather in London off the openweather map 
+-- web service.
 
 -- A prompt to people to read the code.
 local Info = " Now read the code of this channel."
@@ -23,5 +24,6 @@ function main(Data)
    trace(Body)
    -- And put it into the web page result.
    net.http.respond{body=Body..Info}
+   -- DONE!
 end
 
