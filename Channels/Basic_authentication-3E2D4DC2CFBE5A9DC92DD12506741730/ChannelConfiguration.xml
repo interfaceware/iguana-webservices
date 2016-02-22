@@ -10,8 +10,8 @@
    <from_http
       type="mapper"
       guid="Basic_authentication-FromHTTP-Y6ba0wUbVfwPLR"
-      commit_id="d81abe9bda10b4910c3127802175b1fd68bea0dc"
-      commit_comment="Soft coded the basic authentication authorization."
+      commit_id="d38286d3140d62c408baa1ca43d04c4988b6fa3d"
+      commit_comment="Import Translators: basic auth"
       mapper_url_path="basicauth/"/>
    <message_filter
       filter_after_logging="false"

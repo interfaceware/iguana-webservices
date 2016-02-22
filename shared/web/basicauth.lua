@@ -59,4 +59,103 @@ function basicauth.getCredentials(HttpMsg)
    return getCreds(HttpMsg.headers)
 end
 
+local basicauth_isAuthorized=[[{
+   "Desc": "Checks if the specified user is authorized, using the Iguana user database. 
+            Returns <b>true</b> if authorized, otherwise <b>false</b>.<p>
+            <b>Note:</b> You can modify the code to use a dfferent form of authentication if required",
+   "Returns": [{
+         "Desc": "<b>true</b> if authorized, otherwise <b>false</b> <u>boolean</u>"
+      }
+   ],
+   "SummaryLine": "Checks if the specified user is authorized",
+   "SeeAlso": [
+      {
+         "Title": "Basic authentication",
+         "Link": "http://help.interfaceware.com/v6/basic-authentication"
+      }
+   ],
+   "Title": "basicauth.isAuthorized",
+   "Usage": "basicauth.isAuthorized(AuthorizationRequest)",
+   "Parameters": [
+      {
+         "AuthorizationRequest": {"Desc": "Parsed data from a GET authorization request <u>table</u>. "}
+      }
+   ],
+   "Examples": [
+      "<pre>   -- Check authorization and do some error handling if authorization fails
+   -- in this case we use basicauth.requireAuthorization to ask the user to
+   -- (re)enter their login details and log an informational error message<br>
+   if not basicauth.isAuthorized(R) then
+      -- We display this in the prompt to the user (somewhat browser dependent)
+      basicauth.requireAuthorization(\"Please enter your Iguana username and password.\")
+      iguana.logInfo(\"Failed authentication.\")
+      return
+   end</pre>"
+   ],
+   "ParameterTable": false
+}]]
+
+help.set{input_function=basicauth.isAuthorized, help_data=json.parse{data=basicauth_isAuthorized}}    
+
+local basicauth_getCredentials=[[{
+   "Desc": "Extracts the credentials from a parsed GET authorization request.",
+   "Returns": [
+         {"Desc": "A table containing username and password <u>table</u>."},
+         {"Desc": "The name or IP address of the host that the authorization request originated from <u>string</u>."}
+   ],
+   "SummaryLine": "Extract credentials from an authorization request",
+   "SeeAlso": [
+      {
+         "Title": "Basic authentication",
+         "Link": "hthttp://help.interfaceware.com/v6/basic-authentication"
+      }
+   ],
+   "Title": "basicauth.getCredentials",
+   "Usage": "local Auth, Host = basicauth.getCredentials(AuthorizationRequest)",
+   "Parameters": [
+      {
+         "DOB": {"Desc": "Date of birth <u>string</u>. "}
+      }
+   ],
+   "Examples": [
+      "<pre>local Auth, Host = basicauth.getCredentials(AuthorizationRequest)</pre>"
+   ],
+   "ParameterTable": false
+}]]
+
+help.set{input_function=basicauth.getCredentials, help_data=json.parse{data=basicauth_getCredentials}}    
+
+local basicauth_requireAuthorization=[[{
+   "Desc": "Request authorization details (username and password) from the user.",
+   "Returns": [],
+   "SummaryLine": "Request authorization details from the user",
+   "SeeAlso": [
+      {
+         "Title": "Basic authentication",
+         "Link": "http://help.interfaceware.com/v6/basic-authentication"
+      }
+   ],
+   "Title": "basicauth.requireAuthorization",
+   "Usage": "basicauth.requireAuthorization()",
+   "Parameters": [
+      {
+         "ErrorMessage": {"Desc": "Informational login message for the user <u>string</u>. "}
+      }
+   ],
+   "Examples": [
+      "<pre>   -- Check authorization and do some error handling if authorization fails
+   -- in this case we use basicauth.requireAuthorization to ask the user to
+   -- (re)enter their login details and log an informational error message<br>
+   if not basicauth.isAuthorized(R) then
+      -- We display this in the prompt to the user (somewhat browser dependent)
+      basicauth.requireAuthorization(\"Please enter your Iguana username and password.\")
+      iguana.logInfo(\"Failed authentication.\")
+      return
+   end</pre>"
+   ],
+   "ParameterTable": false
+}]]
+
+help.set{input_function=basicauth.requireAuthorization, help_data=json.parse{data=basicauth_requireAuthorization}}    
+
 return basicauth
