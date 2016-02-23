@@ -53,12 +53,17 @@ function method:dispatch(T)
    local User = user.open()
    for K,Group in ipairs(self._priority) do
       trace(K,Group)
+      trace(self._actions[Group])
       if User:userInGroup{user=T.user, group=Group} then
-         if self._actions[Group][Request] then
-            return self._actions[Group][Request]
+       
+         local Action = self._actions[Group][Request] 
+         trace(Action)
+         if Action then
+            return Action
          end
       end
    end
+   return nil
 end
 
 local DispatchInfoHelp=[[{
