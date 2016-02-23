@@ -10,8 +10,8 @@
    <from_http
       type="mapper"
       guid="Redirect_Response-FromHTTP-LTywxy1rku0qJZ"
-      commit_id="fb5ca0e857a05011e064b68db94cf16c98fcc8ed"
-      commit_comment="More comments."
+      commit_id="a9dfec70b8813944b919498b9bc061c4836311c4"
+      commit_comment="More comments on what this for."
       mapper_url_path="redirect/"/>
    <message_filter
       filter_after_logging="false"
