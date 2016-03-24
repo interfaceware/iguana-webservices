@@ -19,9 +19,9 @@ net.http.getCached = function(T)
    if iguana.isTest() then
       Key = CacheKey(T)
       local Value = Cache:get(Key) 
-      if Value and tonumber(Value) <= os.ts.time() then
+      if Value and tonumber(Value) > os.ts.time() - CacheTime then
          trace("Using cached value")
-         return Cache:get(Key..":R"), Cache:put(Key..":C"), Cache:put(Key..":H")
+         return Cache:get(Key..":R"), Cache:get(Key..":C"), Cache:get(Key..":H")
       end
    end
    
