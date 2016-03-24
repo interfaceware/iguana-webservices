@@ -2,15 +2,15 @@
    name="HTTP GET with Caching"
    guid="E7DD58FF8100B674521DE13CA5128B82"
    description="Many webservice integrations require you to make calls with net.http.get to obtain data.&#xD;&#xA;&#xD;&#xA;Sometimes these webservices are slow.  Because the translator executes Lua code as you type this makes intellisense and annotations slower to render.&#xD;&#xA;&#xD;&#xA;Using caching in the editor makes it faster and more convenient to develop code.  The caching is turned off in production. See:&#xD;&#xA;&#xD;&#xA;http://help.interfaceware.com/forums/topic/net-http-getcached"
-   start_automatically="true"
+   start_automatically="false"
    logging_level="1"
    use_message_filter="false">
    <to_channel>
    </to_channel>
    <from_mapper
       guid="HTTP_GET_with_Caching-From-mS2rsyPwyYx2Vc"
-      commit_id="4ac5dd65439bdd0d662b7069f442227c4c94632c"
-      commit_comment="Changed the help to be more accurate."
+      commit_id="78e9fe08575dc396e8d79cce1aa5fe17c4ac7f86"
+      commit_comment="Added example showing the net.http.getCached module working with binary."
       poll_time="10000">
    </from_mapper>
    <message_filter
