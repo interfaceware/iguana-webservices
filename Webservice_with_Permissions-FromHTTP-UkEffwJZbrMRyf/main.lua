@@ -61,6 +61,10 @@ function main(Data)
    -- Find an action based on the user name and request 
    local Action = Dispatcher:dispatch{path=R.location,  user=Auth.username}
    if (Action) then
+      if iguana.isTest() then
+         -- In the editor we don't want to catch errors.
+         return Action(R, Auth)
+      end
       -- we will catch exceptions here
       local Success, ErrorMessage = pcall(Action, R,Auth)
       if not Success then
