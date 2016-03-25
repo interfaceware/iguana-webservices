@@ -35,7 +35,7 @@ function main()
    
    -- It works with binary data too!
    net.http.getCached{url='http://asd.gsfc.nasa.gov/archive/hubble/Hubble_20th.jpg', cache_time=30, live=true}
-
+   
    -- We can reset the cache with this line
    --net.http.cache():reset()
 end

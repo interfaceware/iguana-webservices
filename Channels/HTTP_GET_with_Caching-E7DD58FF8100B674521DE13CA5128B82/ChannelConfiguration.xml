@@ -9,8 +9,8 @@
    </to_channel>
    <from_mapper
       guid="HTTP_GET_with_Caching-From-mS2rsyPwyYx2Vc"
-      commit_id="78e9fe08575dc396e8d79cce1aa5fe17c4ac7f86"
-      commit_comment="Added example showing the net.http.getCached module working with binary."
+      commit_id="dda920852dfe822b9afad7b9a9d9cab534d497d2"
+      commit_comment="Updated net.http.getCached to handle large binary blobs."
       poll_time="10000">
    </from_mapper>
    <message_filter
