@@ -1,0 +1,16 @@
+<channel
+   name="HTTP with Caching"
+   guid="C178617FD9C76C2449F6AEE738D82714"
+   description="Many webservice integrations require you to make calls using the net.http.* API to obtain data.&#xD;&#xA;&#xD;&#xA;Sometimes these web services are slow. Because the translator executes Lua code as you type this makes intellisense and annotations slower to render.&#xD;&#xA;&#xD;&#xA;Using caching in the editor makes it faster and more convenient to develop code. &#xD;&#xA;&#xD;&#xA;This module modifies the net.http APIs to give you the option of caching data.&#xD;&#xA;&#xD;&#xA;The caching is turned off in production. See:&#xD;&#xA;&#xD;&#xA;http://help.interfaceware.com/v6/http-caching"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_mapper
+      guid="HTTP_with_Caching-From-fZNOOMBeROG1n6"
+      commit_id="0b6085c2d99cc1a8d3ad785615f676ed250af8bb"
+      commit_comment="First commit."
+      poll_time="10000">
+   </from_mapper>
+</channel>
