@@ -68,6 +68,9 @@ function iformbuilder.connect(T)
    if Cache == nil then Cache = true end
    -- 3) Click on fetchAccessToken
    R.access_token = fetchAccessToken(T.client_key, T.client_secret, Cache)
+   if not R.access_token then
+      error('Failed to authenticate', 2)
+   end
    trace("Access token: "..R.access_token)
    R.profile_id = T.profile_id
    setmetatable(R, MT)
