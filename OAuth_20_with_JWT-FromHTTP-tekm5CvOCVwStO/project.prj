@@ -1,0 +1,16 @@
+{
+    "LocalDependencies": [],
+    "LuaDependencies": [
+        "iformbuilder.api",
+        "net.http.cache",
+        "oauth.jwt",
+        "store2"
+    ],
+    "OtherDependencies": [],
+    "timestamp": "1460050974",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}

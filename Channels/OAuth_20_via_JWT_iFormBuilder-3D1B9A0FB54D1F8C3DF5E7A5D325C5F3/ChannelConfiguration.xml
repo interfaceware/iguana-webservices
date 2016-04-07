@@ -1,0 +1,25 @@
+<channel
+   name="OAuth 2.0 via JWT iFormBuilder"
+   guid="3D1B9A0FB54D1F8C3DF5E7A5D325C5F3"
+   description="This channel shows how one can implement OAuth 2.0 using the Json Web Token (JWT) standard for getting an access token.&#xD;&#xA;&#xD;&#xA;See: http://help.interfaceware.com/v6/oauth2-with-iformbuilder &#xD;&#xA;&#xD;&#xA;To provide a real reference implementation we do this against the iFormBuilder application which is a cloud application which makes it easy to deploy forms to mobile devices."
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_http
+      type="mapper"
+      guid="OAuth_20_with_JWT-FromHTTP-tekm5CvOCVwStO"
+      commit_id="dd1ffa9ed9886ebfa132d02d767d5f3b1ed2aa62"
+      commit_comment="Taken out the real credentials."
+      mapper_url_path="iformbuilder/"/>
+   <message_filter
+      filter_after_logging="false"
+      log_pre_post_filter_message="true"
+      filter_vmd_path=""
+      transformation_mode="0"
+      scripted_transformation_configuration_name="default"
+      error_handling="0"
+      use_translator_filter="true">
+   </message_filter>
+</channel>
