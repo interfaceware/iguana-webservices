@@ -10,8 +10,8 @@
    <from_http
       type="mapper"
       guid="OAuth_20_with_JWT-FromHTTP-tekm5CvOCVwStO"
-      commit_id="dd1ffa9ed9886ebfa132d02d767d5f3b1ed2aa62"
-      commit_comment="Taken out the real credentials."
+      commit_id="0de448dbb9a9197065e61e40e3b9ab4c678671a1"
+      commit_comment="Put in disconnect error handling."
       mapper_url_path="iformbuilder/"/>
    <message_filter
       filter_after_logging="false"

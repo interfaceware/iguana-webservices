@@ -12,7 +12,7 @@
 
 local iFormBuilder = require 'iformbuilder.api'
 
-function main()
+function work()
    -- First authenticate and get a connection
    -- 1) Create yourself a free iFormBuilder account and get an
    --    your own 'client_key', 'client_secret' and 'profile_id'
@@ -36,3 +36,23 @@ function main()
    trace(R)
    net.http.respond{body=R, entity_type='text/plain'}
 end   
+
+function main(Data)
+   local Success,Msg = pcall(work)
+   if not Success then
+      local Response = [[
+      <p>
+      To make this example work you will need to go to here:
+      </p>   
+      <a href="http://help.interfaceware.com/v6/oauth2-with-iformbuilder">http://help.interfaceware.com/v6/oauth2-with-iformbuilder</a>
+      <p>   
+      And follow these instructions.  The error raised was:
+      </p>
+      <pre>
+      #ERROR#   
+      </pre>
+      ]]
+      Response=Response:gsub("#ERROR#", Msg)
+      net.http.respond{body=Response}
+   end
+end
