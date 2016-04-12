@@ -1,7 +1,7 @@
 <channel
    name="Basic authentication"
    guid="3E2D4DC2CFBE5A9DC92DD12506741730"
-   description="This channel shows how to make a webservice using basic HTTP digest authentication.&#xD;&#xA;&#xD;&#xA;That means it will drop down a dialog for you to enter your Iguana name and password before it shows you the web page results."
+   description="This channel shows how to make a webservice using basic HTTP digest authentication.&#xD;&#xA;&#xD;&#xA;That means it will drop down a dialog for you to enter your Iguana name and password before it shows you the web page results.&#xD;&#xA;&#xD;&#xA;http://help.interfaceware.com/v6/basic-authentication"
    start_automatically="true"
    logging_level="1"
    use_message_filter="false">
@@ -10,8 +10,8 @@
    <from_http
       type="mapper"
       guid="Basic_authentication-FromHTTP-Y6ba0wUbVfwPLR"
-      commit_id="d38286d3140d62c408baa1ca43d04c4988b6fa3d"
-      commit_comment="Import Translators: basic auth"
+      commit_id="64ed50587968f110ee522fbb69655859a98abcde"
+      commit_comment="Import Translators: Basic auth"
       mapper_url_path="basicauth/"/>
    <message_filter
       filter_after_logging="false"

@@ -1,6 +1,8 @@
 -- This channel shows how one can implement basic authentication with an Iguana channel.
 -- We use the Iguana user database as our source of users.
 
+-- http://help.interfaceware.com/v6/basic-authentication
+
 basicauth = require 'web.basicauth'
 
 function main(Data)
