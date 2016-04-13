@@ -36,7 +36,7 @@ for i=1,#NetHttpList do
          if not Success then
             error(Response, 2)
          end
-         return Func(Args)
+         return Response, Code, Headers
       end
       local TimeOut = Args.cache_time
       Args.cache_time = nil
