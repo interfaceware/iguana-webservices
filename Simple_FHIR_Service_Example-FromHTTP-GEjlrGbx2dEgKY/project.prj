@@ -1,0 +1,14 @@
+{
+    "LocalDependencies": [
+        "handlers.lua",
+        "html.lua"
+    ],
+    "LuaDependencies": [],
+    "OtherDependencies": [],
+    "timestamp": "1461007799",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}
