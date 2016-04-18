@@ -1,0 +1,16 @@
+<channel
+   name="OAuth 1.0 with Twitter"
+   guid="E923641141657D51AFDCADB6B5E32384"
+   description="Post to the Twitter using Oauth1 using HMAC signing.&#xD;&#xA;&#xD;&#xA;See http://help.interfaceware.com/v6/oauth-1-0-with-twitter"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+   </to_channel>
+   <from_http
+      type="mapper"
+      guid="OAuth_10_with_Twitter-FromHTTP-BySFe7atclIgtH"
+      commit_id="d216672d329408276f9dc88f30a5067eb47779f3"
+      commit_comment="Put in comment links."
+      mapper_url_path="twitter"/>
+</channel>

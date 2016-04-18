@@ -1,0 +1,14 @@
+{
+    "LocalDependencies": [],
+    "LuaDependencies": [
+        "oauth.oauth",
+        "twitter.api"
+    ],
+    "OtherDependencies": [],
+    "timestamp": "1461009334",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}
