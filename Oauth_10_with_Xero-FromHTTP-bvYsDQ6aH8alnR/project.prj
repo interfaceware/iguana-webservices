@@ -1,0 +1,14 @@
+{
+    "LocalDependencies": [],
+    "LuaDependencies": [
+        "oauth.oauth",
+        "xero.api"
+    ],
+    "OtherDependencies": [],
+    "timestamp": "1461011336",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}
