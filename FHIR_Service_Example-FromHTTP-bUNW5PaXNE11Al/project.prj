@@ -1,0 +1,38 @@
+{
+    "LocalDependencies": [
+        "database.lua",
+        "fhir/complex_datatypes.lua",
+        "fhir/complex_datatypes_reference.lua",
+        "fhir/mappings/DB2json/Patient.lua",
+        "fhir/mappings/DB2xml/Patient.lua",
+        "fhir/mappings/controller.lua",
+        "fhir/mappings/json2DB/Patient.lua",
+        "fhir/mappings/utilities.lua",
+        "fhir/mappings/xml2DB/Patient.lua",
+        "fhir/resources/definitions/controller.lua",
+        "fhir/resources/definitions/types/Bundle.lua",
+        "fhir/resources/definitions/types/Patient.lua",
+        "fhir/resources/objects.lua",
+        "fhir/resources/utilities/json.lua",
+        "fhir/resources/utilities/xml.lua",
+        "index.html",
+        "web/handlers/controller.lua",
+        "web/handlers/types/delete.lua",
+        "web/handlers/types/get.lua",
+        "web/handlers/types/post.lua",
+        "web/handlers/types/put.lua",
+        "web/responses.lua",
+        "web/utils.lua"
+    ],
+    "LuaDependencies": [],
+    "OtherDependencies": [
+        "FHIR_PatientData.sqlite",
+        "FHIR_VMDs/patient.vmd"
+    ],
+    "timestamp": "1461693499",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}
