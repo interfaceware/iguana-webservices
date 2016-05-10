@@ -11,7 +11,7 @@ function main(Data)
    -- Find out the weather in London, UK
    local Parameters = {
       q='London,uk', 
-      appid='44db6a862fba0b067b1930da0d769e98'
+      appid='6c33b91b0582d178d85ad63b7fb2ea7f'
    }
    
    -- Call the web service

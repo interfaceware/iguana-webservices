@@ -10,8 +10,8 @@
    <from_http
       type="mapper"
       guid="Call_a_webservice-FromHTTP-JAp3PFjeWtDuN1"
-      commit_id="b40b58cc3aeec1e9f7a70ca0b45e57433847fd37"
-      commit_comment="Improved comments a little."
+      commit_id="745360ebb0c4d0541b8c84a2ffd4c90aec9f8241"
+      commit_comment="Updated app key."
       mapper_url_path="weather/"/>
    <message_filter
       filter_after_logging="false"
