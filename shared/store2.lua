@@ -5,10 +5,11 @@
 -- in which it is used.
 --
 -- This new version of the store module involves constructing a store with the name of the store table.
-
+--
+-- http://help.interfaceware.com/v6/store-example
 
 local store = {}
- 
+
 -- Constants.
 local DROP_TABLE_COMMAND = "DROP TABLE IF EXISTS store"
 local CREATE_TABLE_COMMAND = [[
@@ -121,6 +122,16 @@ end
 
 function method:put(Key, Value)
    local conn = GetConnection(self.name)
+   if (not Value) then
+      -- Clearing the value - it's possible there might have been a blob
+      local FileName = BlobFileName(self,Key)
+      os.remove(FileName)
+      local Sql = "DELETE FROM store WHERE CKey = "..conn:quote(tostring(Key))
+      conn:query{sql=Sql}
+      conn:close()
+      return "Cleared key "..Key
+   end
+   
    if #tostring(Value) > 100000 then
       WriteBlob(self, Key, Value)
       local R = conn:query('REPLACE INTO store(CKey, CValue) VALUES(' ..
@@ -211,13 +222,14 @@ if help then
    local h = help.example()
    h.Title = 'store:put(Name, Value)'
    h.Desc = [[Insert a Value for the Key. If the Key exists then replace the value. 
-              If the Key does not exist insert a new Key and Value.]]
+              If the Key does not exist insert a new Key and Value.  Setting the Value equal to nil
+              will result in the Key being deleted from the store.]]
    h.Usage = 'store:put(Key, Value)'
    h.Parameters = {
       [1]={['Key']={['Desc']='Unique Identifier <u>string</u>'}},
       [2]={['Value']={['Desc']='Value to store <u>string</u>'}}
    }
-   h.Returns = 'none.'
+   h.Returns = {[1]={['Desc']='Message confirming deletion or nil <u>string</u>'}}
    h.ParameterTable = false
    h.Examples = {[1]=[[<pre>store:put('I am the Key', 'I am the Value')</pre>]]}
    h.SeeAlso = ''
@@ -228,7 +240,7 @@ if help then
    ------------------------
    local h = help.example()
    h.Title = 'store:get(Name)'
-   h.Desc = 'Retrieve the Value for the specified Key.'
+   h.Desc = 'Retrieve the Value for the specified Key. If the Key is not found nil is returned'
    h.Usage = 'store:get(Key)'
    h.Parameters = {
       [1]={['Key']={['Desc']='Unique Identifier <u>string</u>'}}
@@ -249,12 +261,12 @@ if help then
    h.Parameters = {
       [1]={['DatabaseName']={['Desc']='Name of the database file <u>string</u>'}}
    }
-   h.Returns = {}
+   h.Returns = {[1]={['Desc']='A store object with methods to access the data <u>table</u>'}}
    h.ParameterTable = false
    h.Examples = {[1]=[[<pre>local MyStore = store.store("mystore.db")</pre>
                MyStore:put("id", 1212)]]}
    h.SeeAlso = ''
    help.set{input_function=store.connect, help_data=h}
 end
- 
+
 return store

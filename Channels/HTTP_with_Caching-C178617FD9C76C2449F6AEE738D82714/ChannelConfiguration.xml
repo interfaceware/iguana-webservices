@@ -9,8 +9,8 @@
    </to_channel>
    <from_mapper
       guid="HTTP_with_Caching-From-fZNOOMBeROG1n6"
-      commit_id="0b6085c2d99cc1a8d3ad785615f676ed250af8bb"
-      commit_comment="First commit."
+      commit_id="bd76d1e4ddea844232acf19120edadb7e6443692"
+      commit_comment="Import Translators: http cache"
       poll_time="10000">
    </from_mapper>
 </channel>
