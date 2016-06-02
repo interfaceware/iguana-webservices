@@ -1,0 +1,13 @@
+{
+    "LocalDependencies": [
+        "FhirPatient.lua"
+    ],
+    "LuaDependencies": [],
+    "OtherDependencies": [],
+    "timestamp": "1464895569",
+    "version_info": {
+        "build": 0,
+        "major": 6,
+        "minor": 0
+    }
+}

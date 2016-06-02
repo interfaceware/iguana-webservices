@@ -1,0 +1,24 @@
+{
+    "Samples": [
+        {
+            "Message": "GET /fhir/patient/1 HTTP/1.1\r\nHost: 10.211.55.2:6545\r\nAccept: */*\r\n\r\n",
+            "Name": "Message 1"
+        },
+        {
+            "Message": "GET /fhir/patient/ HTTP/1.1\r\nHost: 10.211.55.2:6545\r\nAccept: */*\r\n\r\n",
+            "Name": "Message 2"
+        },
+        {
+            "Message": "PUT /fhir/patient/1 HTTP/1.1\r\nHost: 10.211.55.2:6545\r\nAccept: */*\r\nExpect: 100-continue\r\nContent-Length: 1710\r\n\r\n{\n   \"active\": true,\n   \"id\": \"1\",\n   \"gender\": \"M\",\n   \"telecom\": {\n      \"value\": \"905-098-1245\",\n      \"resourceType\": \"ContactPoint\",\n      \"system\": \"phone\"\n   },\n   \"deceased[x]\": false,\n   \"contact\": {\n      \"name\": {\n         \"family\": \"Kessel\",\n         \"resourceType\": \"HumanName\",\n         \"given\": \"Phil\",\n         \"text\": \"Phil Kessel\"\n      },\n      \"telecom\": {\n         \"value\": \"987-987-2567\",\n         \"resourceType\": \"ContactPoint\",\n         \"system\": \"phone\"\n      },\n      \"relationship\": {\n         \"coding\": [\n            {\n               \"system\": \"http://hl7.org/fhir/patient-contact-relationship\",\n               \"code\": \"Friend\"\n            }\n         ],\n         \"text\": \"Friend\"\n      },\n      \"address\": {\n         \"state\": \"ON\",\n         \"resourceType\": \"Address\",\n         \"city\": \"Fakington\",\n         \"postalCode\": \"Y8D6U9\",\n         \"text\": \"456 Fakes Cres. Fakington, ON Canada Y8D6U9\",\n         \"line\": [\n            \"456 Fakes Cres.\"\n         ],\n         \"country\": \"Canada\"\n      }\n   },\n   \"resourceType\": \"Patient\",\n   \"name\": {\n      \"family\": \"Scals\",\n      \"resourceType\": \"HumanName\",\n      \"given\": \"Jon\",\n      \"text\": \"Jon Scals\"\n   },\n   \"communication\": {\n      \"language\": {\n         \"coding\": [\n            {\n               \"system\": \"http://tools.ietf.org/html/bcp47\",\n               \"code\": \"EN\"\n            }\n         ],\n         \"text\": \"EN\"\n      }\n   },\n   \"birthDate\": \"02/02/1989\",\n   \"address\": {\n      \"state\": \"ON\",\n      \"resourceType\": \"Address\",\n      \"city\": \"Fakeington\",\n      \"postalCode\": \"L5L4I9\",\n      \"text\": \"123 Fake St. Fakeington, ON Canada L5L4I9\",\n      \"line\": [\n         \"123 Fake St.\"\n      ],\n      \"country\": \"Canada\"\n   }\n}",
+            "Name": "Message 3"
+        },
+        {
+            "Message": "POST /fhir/patient/ HTTP/1.1\r\nHost: 10.211.55.2:6545\r\nAccept: */*\r\nContent-Length: 1719\r\nContent-Type: application/x-www-form-urlencoded\r\nExpect: 100-continue\r\n\r\n{\n   \"active\": false,\n   \"telecom\": {\n      \"resourceType\": \"ContactPoint\",\n      \"value\": \"289-961-2837\",\n      \"system\": \"phone\"\n   },\n   \"deceased[x]\": false,\n   \"contact\": {\n      \"telecom\": {\n         \"resourceType\": \"ContactPoint\",\n         \"value\": \"123-456-789\",\n         \"system\": \"phone\"\n      },\n      \"relationship\": {\n         \"coding\": [\n            {\n               \"code\": \"Friend\",\n               \"system\": \"http://hl7.org/fhir/patient-contact-relationship\"\n            }\n         ],\n         \"text\": \"Friend\"\n      },\n      \"address\": {\n         \"postalCode\": \"Y8D6U9\",\n         \"text\": \"456 Fakes Cres. Fakington, ON Canada Y8D6U9\",\n         \"state\": \"ON\",\n         \"resourceType\": \"Address\",\n         \"city\": \"Fakington\",\n         \"country\": \"Canada\",\n         \"line\": [\n            \"456 Fakes Cres.\"\n         ]\n      },\n      \"name\": {\n         \"resourceType\": \"HumanName\",\n         \"family\": \"Brown\",\n         \"text\": \"Connor Brown\",\n         \"given\": \"Connor\"\n      }\n   },\n   \"resourceType\": \"Patient\",\n   \"birthDate\": \"02/02/1982\",\n   \"gender\": \"M\",\n   \"communication\": {\n      \"language\": {\n         \"coding\": [\n            {\n               \"code\": \"EN\",\n               \"system\": \"http://tools.ietf.org/html/bcp47\"\n            }\n         ],\n         \"text\": \"EN\"\n      }\n   },\n   \"name\": {\n      \"resourceType\": \"HumanName\",\n      \"family\": \"Kadri\",\n      \"text\": \"Nazem Kadri\",\n      \"given\": \"Nazem\"\n   },\n   \"address\": {\n      \"postalCode\": \"L5L4I9\",\n      \"text\": \"8912 Fake St. Fakeington, ON Canada L5L4I9\",\n      \"state\": \"ON\",\n      \"resourceType\": \"Address\",\n      \"city\": \"Fakeington\",\n      \"country\": \"Canada\",\n      \"line\": [\n         \"8912 Fake St.\"\n      ]\n   },\n   \"id\": \"1\"\n}\n",
+            "Name": "Message 4"
+        },
+        {
+            "Message": "DELETE /fhir/patient/32 HTTP/1.1\r\nHost: Jons-MacBook-Pro.local:6545\r\nAccept: */*\r\n\r\n",
+            "Name": "Message 5"
+        }
+    ]
+}
