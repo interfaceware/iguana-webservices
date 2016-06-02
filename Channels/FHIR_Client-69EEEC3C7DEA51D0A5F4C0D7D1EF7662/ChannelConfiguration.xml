@@ -9,8 +9,8 @@
    </to_channel>
    <from_mapper
       guid="FHIR_Client-From-LdNyyotcZLUK3z"
-      commit_id="91ec306ba059eeb5c60bc21aff94412833827692"
-      commit_comment="Import Translators: Import FHIR tools"
+      commit_id="5e582ea8fabc98cb225c8f6ac76f182b6a54bd2e"
+      commit_comment="Turn off runtests by default."
       poll_time="10000">
    </from_mapper>
 </channel>

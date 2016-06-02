@@ -18,7 +18,7 @@ end
 function main()
    
    -- Set to true to run the below FHIR server tests and examine the results (They will take a few seconds)
-   local RunTests = true
+   local RunTests = false
    
    if RunTests then
       
