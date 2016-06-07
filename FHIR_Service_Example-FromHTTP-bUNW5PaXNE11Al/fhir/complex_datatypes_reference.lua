@@ -501,6 +501,4 @@ Datatypes.xml.Narrative = [[
 ]]
 
 
-
-
 return Datatypes

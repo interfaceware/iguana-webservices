@@ -1,7 +1,7 @@
 <channel
    name="FHIR Client"
    guid="69EEEC3C7DEA51D0A5F4C0D7D1EF7662"
-   description="This is a client channel that demonstrates how to make calls into the FHIR server channel. &#xD;&#xA;&#xD;&#xA;It does this by performing Read/Create/Update/Delete operations on Patient resources through GET/POST/PUT/DELETE HTTP requests."
+   description="This is a client channel that demonstrates how to make calls into the FHIR server channel. &#xD;&#xA;&#xD;&#xA;It does this by performing Read/Create/Update/Delete operations on Patient resources through GET/POST/PUT/DELETE HTTP requests.&#xD;&#xA;&#xD;&#xA;http://help.interfaceware.com/v6/fhir-client-and-server"
    start_automatically="false"
    logging_level="1"
    use_message_filter="false">
@@ -9,8 +9,8 @@
    </to_channel>
    <from_mapper
       guid="FHIR_Client-From-LdNyyotcZLUK3z"
-      commit_id="5e582ea8fabc98cb225c8f6ac76f182b6a54bd2e"
-      commit_comment="Turn off runtests by default."
+      commit_id="2128da6bf8aba754c56aeacce6b6151a83b59890"
+      commit_comment="Import Translators: FHIR Server Julian"
       poll_time="10000">
    </from_mapper>
 </channel>

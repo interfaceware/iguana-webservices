@@ -1,7 +1,7 @@
 <channel
    name="FHIR Server"
    guid="F6694F20FCAD9D3C09C2DFB58F6D7AAC"
-   description="This channel is an example web service that allows for health care information to be accessed and manipulated using a FHIR based API.&#xD;&#xA;&#xD;&#xA;Please reach out if you have any FHIR projects in play.&#xD;&#xA;"
+   description="This channel is an example web service that allows for health care information to be accessed and manipulated using a FHIR based API.&#xD;&#xA;&#xD;&#xA;Please reach out if you have any FHIR projects in play.&#xD;&#xA;&#xD;&#xA;http://help.interfaceware.com/v6/fhir-client-and-server"
    start_automatically="false"
    logging_level="1"
    use_message_filter="false">
@@ -10,8 +10,8 @@
    <from_http
       type="mapper"
       guid="FHIR_Service_Example-FromHTTP-bUNW5PaXNE11Al"
-      commit_id="91ec306ba059eeb5c60bc21aff94412833827692"
-      commit_comment="Import Translators: Import FHIR tools"
+      commit_id="2128da6bf8aba754c56aeacce6b6151a83b59890"
+      commit_comment="Import Translators: FHIR Server Julian"
       mapper_url_path="fhir/"/>
    <message_filter
       filter_after_logging="false"

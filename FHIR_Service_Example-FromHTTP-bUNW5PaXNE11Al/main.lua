@@ -1,3 +1,13 @@
+-- This channel is an example web service that allows for health care information to be accessed 
+-- and manipulated using a FHIR based API. 
+-- It supports a basic set of FHIR operations like read, search, update, delete, and create. 
+-- These operations support both XML and JSON data formats.
+
+-- The "FHIR Client" channel is designed to work with this FHIR Server channel
+-- (though you can also use/create another channel to use this FHIR Server channel)
+
+-- http://help.interfaceware.com/v6/fhir-client-and-server
+
 local Handlers  = require 'web.handlers.controller'
 local WebUtils  = require 'web.utils'
 local Database  = require 'database'
