@@ -30,7 +30,7 @@ local function fetchAccessToken(ClientKey, ClientSecret, CacheToken)
  
    local IssuedAt  = os.ts.gmtime()
    local ExpiresAt = IssuedAt + 60 * 9
-   local Url = "https://www.iformbuilder.com/exzact/api/oauth/token"
+   local Url = "https://app.iformbuilder.com/exzact/api/oauth/token"
    local Payload={iss=ClientKey, aud=Url,
                   exp=ExpiresAt, iat=IssuedAt }
    trace("iss="..ClientKey)
