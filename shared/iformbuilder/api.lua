@@ -108,7 +108,7 @@ help.set{input_function=iformbuilder.connect, help_data=IFormBuilderConnectHelp}
 -- We have one example method created here.  To create convenience methods for other APIs go to
 -- https://iformbuilder.zendesk.com/hc/en-us/sections/200330890-API-Documentation
 function Method.users(self)
-   local FetchUsersUrl = "https://www.iformbuilder.com/exzact/api/profiles/"..self.profile_id.. "/users"
+   local FetchUsersUrl = "https://app.iformbuilder.com/exzact/api/profiles/"..self.profile_id.. "/users"
    -- Setup the request parameters as per the API you are using. This call fetches all users in the specified
    -- iFormBuilder user group.
    -- See https://iformbuilder.zendesk.com/hc/en-us/articles/201702990-User-API-5-1#u2
